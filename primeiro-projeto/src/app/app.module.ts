@@ -7,6 +7,7 @@ import { MeuPrimeiroComponenteComponent } from './components/meu-primeiro-compon
 import { SegundoComponenteComponent } from './components/segundo-componente/segundo-componente.component';
 import { TerceiroComponenteComponent } from './components/terceiro-componente/terceiro-componente.component';
 import { QuartoComponenteComponent } from './components/quarto-componente/quarto-componente.component';
+import { CursosComponent } from './components/cursos/cursos.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { QuartoComponenteComponent } from './components/quarto-componente/quarto
     MeuPrimeiroComponenteComponent,
     SegundoComponenteComponent,
     TerceiroComponenteComponent,
-    QuartoComponenteComponent
+    QuartoComponenteComponent,
+    CursosComponent
   ],
   imports: [
     BrowserModule,
