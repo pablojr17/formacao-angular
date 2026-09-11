@@ -1,0 +1,117 @@
+<!--
+<article>
+  <h1>Interpolation</h1>
+  <p>Url interpolada: {{url}}</p>
+  <p>Valor: {{ 1 + 1 }}</p>
+  <p>Valor: {{getValor()}}</p>
+  <p>Valor: {{isTrue && getValor() + 17}}</p>
+</article>
+
+
+<article>
+  <h1>Property binding</h1>
+  <img src="{{img}}" alt="">
+  <img [src]="img" alt="">
+  <img bind-src="img" alt="">
+</article>
+
+<article>
+  <h1>Class e Style bingding</h1>
+  <div>Selecione uma classe: </div>
+  <select #classe (change)="0">
+    <option value="alert-success">Sucesso</option>
+    <option value="alert-info">Info</option>
+    <option value="alert-danger">Erro</option>
+    <option value="alert-warning">Alerta</option>
+  </select>
+  <br>
+  <br>
+
+    <div
+    class="alert {{classe.value}}"
+    role="alert"
+  >
+    Texto colorido
+  </div>
+
+  <div
+    class="alert"
+    [class.alert-success]="classe.value == 'alert-success'"
+    role="alert"
+  >
+    Sucesso
+  </div>
+
+  <div
+    class="alert"
+    [class.alert-info]="classe.value == 'alert-info'"
+    role="alert"
+  >
+    Info
+  </div>
+
+    <div
+    class="alert"
+    [class.alert-danger]="classe.value == 'alert-danger'"
+    role="alert"
+  >
+    Error
+  </div>
+
+    <div
+    class="alert"
+    [class.alert-warning]="classe.value == 'alert-warning'"
+    role="alert"
+  >
+    Alerta
+  </div>
+
+  <div
+    class="alert"
+    [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'"
+    [class.alert-danger]="classe.value == 'alert-danger'"
+    role="alert"
+  >
+    Mensagem de erro
+  </div>
+</article> -->
+
+<!-- <article>
+  <h1>Event binding</h1>
+  <button (click)="botaoClicado()" [style.background-color]="passouMouse ? 'red' : ''" class="btn btn-primary"> Me click</button>
+
+  <input type="text" #evento (mouseenter)="onMouseEnter()" (mouseleave)="onMouseEnter()" (keyup)="onKeyUp(evento.value)" id="text" />
+  <p>
+    {{textoDigitado}}
+  </p>
+</article> -->
+
+
+<article>
+  <h1>Two-way data binding</h1>
+
+  <!-- <input
+    type="text"
+    id="text"
+    [value]="textoDigitado"
+    (input)="textoDigitado = $event.target.value" />
+  <p>
+    {{textoDigitado}}
+  </p> -->
+
+  <!-- <input type="text" [ngModel]="textoDigitado"
+    (ngModelChange)="textoDigitado = $event">
+    <p>{{textoDigitado}}</p>
+    <br>
+    <br> -->
+
+  <!-- <input type="text" [(ngModel)]="textoDigitado">
+  <p>{{textoDigitado}}</p>
+  <br> -->
+
+  <input type="text" [(ngModel)]="pessoa.nome">
+  <p>Nome: {{pessoa.nome}}</p>
+
+  <input type="text" [(ngModel)]="pessoa.idade">
+  <p>Idade: {{pessoa.idade}}</p>
+</article>
