@@ -7,8 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'data-binding';
-
+valor = 1
+deletar = false
   onMudouValor(event: any) {
     console.log(event)
+  }
+  mudarValor() {
+    this.valor++;
+  }
+
+  deletarComponente() {
+    this.deletar = !this.deletar;
   }
 }

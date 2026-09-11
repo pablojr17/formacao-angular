@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { InputPropertyComponent } from './input-property/input-property.component';
 import { CursoComponent } from './curso/curso.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
+import { CicloComponent } from './ciclo/ciclo.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { OutputPropertyComponent } from './output-property/output-property.compo
     InputPropertyComponent,
     CursoComponent,
     OutputPropertyComponent,
+    CicloComponent,
   ],
   imports: [
     BrowserModule,

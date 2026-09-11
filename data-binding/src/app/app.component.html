@@ -2,4 +2,8 @@
 <!-- <app-input-property [nomeCurso]="'Angular'"></app-input-property>
 <app-input-property [nomeCurso]="'Java'"></app-input-property> -->
 
-<app-output-property (mudouValor)="onMudouValor($event)"></app-output-property>
+<!-- <app-output-property (mudouValor)="onMudouValor($event)"></app-output-property> -->
+
+<app-ciclo *ngIf="!deletar" [valor]="valor"></app-ciclo>
+<button (click)="mudarValor()">Click</button>
+<button (click)="deletarComponente()">Deletar</button>
