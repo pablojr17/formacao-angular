@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'data-binding';
+
+  onMudouValor(event: any) {
+    console.log(event)
+  }
 }
